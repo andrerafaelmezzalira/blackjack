@@ -1,6 +1,6 @@
 # Blackjack
 
-Blackjack is famous game of 21! 
+Blackjack is the famous game of 21! 
 
 ## Requirements
 - Maven 3.x
@@ -9,12 +9,12 @@ Blackjack is famous game of 21!
 ## Usage
 
 ### Package
-`` make package ``
+`` make package `` or `` mvn clean package`` 
 
 ### Install
-`` make install ``
+`` make install `` or `` mvn clean install``
 
 ### Run
-`` make run ``
+`` make run `` or `` mvn exec:java -Dexec.mainClass="org.example.blackjack.web.MainWeb"``
 
 [Play!](http://localhost:8080)
