@@ -1,6 +1,8 @@
 package org.example.blackjack;
 
 public class BlackjackGame {
+
+    private static final int MAX_VALUE_BLACKJACK = 21;
     private final Deck deck;
     private final Player dealer;
     private final Player player;
@@ -34,11 +36,11 @@ public class BlackjackGame {
     }
 
     private Player determineWinner() {
-        if (player.getScore() == 21 || dealer.getScore() > 21) {
+        if (player.getScore() == MAX_VALUE_BLACKJACK || dealer.getScore() > MAX_VALUE_BLACKJACK) {
             System.out.println("Player wins!");
             return  player;
         }
-        if (dealer.getScore() == 21 || player.getScore() > 21) {
+        if (dealer.getScore() == MAX_VALUE_BLACKJACK || player.getScore() > MAX_VALUE_BLACKJACK) {
             System.out.println("Dealer wins!");
             return  dealer;
         }
